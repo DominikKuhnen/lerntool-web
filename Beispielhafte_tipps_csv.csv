@@ -1,0 +1,41 @@
+ID,Tipp,Status,Abteilung,Eingereicht von,Eingereicht am,Freigegeben von,Freigegeben am,Abgelehnt von,Abgelehnt am,Abgelehnt Kommentar,Bearbeitet von,Bearbeitet am,Bearbeitet Kommentar
+1,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Abgelehnt,Assembly,SK,24.06.2025,,,PPE,25.06.2025,Formfehler,,,
+2,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Bearbeitet,Assembly,SK,30.06.2025,,,,,,DKU,02.07.2025,Formulierung angepasst
+3,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Bearbeitet,Assembly,DKU,22.06.2025,,,,,,PPE,24.06.2025,Formulierung angepasst
+4,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Freigegeben,Assembly,DKU,21.06.2025,SK,22.06.2025,,,,,,
+5,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Offen,Assembly,PPE,21.06.2025,,,,,,,,
+6,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Offen,Assembly,DKU,28.06.2025,,,,,,,,
+7,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Abgelehnt,Assembly,DKU,25.06.2025,,,SK,26.06.2025,Kein konkreter Bezug,,,
+8,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Offen,Assembly,SK,29.06.2025,,,,,,,,
+9,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Abgelehnt,Assembly,DKU,07.06.2025,,,SK,08.06.2025,Kein konkreter Bezug,,,
+10,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Offen,Assembly,SK,10.06.2025,,,,,,,,
+11,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Bearbeitet,Assembly,SK,13.06.2025,,,,,,PPE,15.06.2025,Formulierung angepasst
+12,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Abgelehnt,Assembly,PPE,25.06.2025,,,PPE,26.06.2025,Unklar formuliert,,,
+13,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Bearbeitet,Assembly,PPE,08.06.2025,,,,,,PPE,10.06.2025,Formulierung angepasst
+14,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Freigegeben,Assembly,DKU,12.06.2025,DKU,13.06.2025,,,,,,
+15,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Bearbeitet,Assembly,DKU,28.06.2025,,,,,,DKU,30.06.2025,Formulierung angepasst
+16,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Abgelehnt,Assembly,SK,10.06.2025,,,DKU,11.06.2025,Formfehler,,,
+17,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Freigegeben,Assembly,PPE,21.06.2025,PPE,22.06.2025,,,,,,
+18,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Offen,Assembly,SK,19.06.2025,,,,,,,,
+19,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Freigegeben,Assembly,DKU,06.06.2025,PPE,07.06.2025,,,,,,
+20,Prüfe regelmäßig die Einstellungen in der Assembly-Zelle.,Bearbeitet,Assembly,PPE,23.06.2025,,,,,,DKU,25.06.2025,Formulierung angepasst
+21,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Abgelehnt,Machining,MKA,11.06.2025,,,MKA,12.06.2025,Kein konkreter Bezug,,,
+22,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Offen,Machining,PGI,29.06.2025,,,,,,,,
+23,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Offen,Machining,MKA,23.06.2025,,,,,,,,
+24,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Freigegeben,Machining,PGI,11.06.2025,MKA,12.06.2025,,,,,,
+25,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Offen,Machining,PGI,20.06.2025,,,,,,,,
+26,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Offen,Machining,MKA,19.06.2025,,,,,,,,
+27,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Freigegeben,Machining,MKA,13.06.2025,MSL,14.06.2025,,,,,,
+28,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Offen,Machining,MSL,08.06.2025,,,,,,,,
+29,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Abgelehnt,Machining,MSL,07.06.2025,,,PGI,08.06.2025,Formfehler,,,
+30,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Offen,Machining,MKA,27.06.2025,,,,,,,,
+31,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Offen,Machining,MSL,08.06.2025,,,,,,,,
+32,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Abgelehnt,Machining,PGI,19.06.2025,,,MSL,20.06.2025,Zu allgemein,,,
+33,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Bearbeitet,Machining,MSL,17.06.2025,,,,,,MSL,19.06.2025,Formulierung angepasst
+34,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Bearbeitet,Machining,MSL,05.06.2025,,,,,,PGI,07.06.2025,Formulierung angepasst
+35,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Bearbeitet,Machining,PGI,14.06.2025,,,,,,MKA,16.06.2025,Formulierung angepasst
+36,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Offen,Machining,MKA,16.06.2025,,,,,,,,
+37,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Offen,Machining,MKA,15.06.2025,,,,,,,,
+38,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Abgelehnt,Machining,MKA,08.06.2025,,,MSL,09.06.2025,Zu allgemein,,,
+39,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Freigegeben,Machining,MKA,06.06.2025,MKA,07.06.2025,,,,,,
+40,Prüfe regelmäßig die Einstellungen in der Machining-Zelle.,Freigegeben,Machining,MKA,13.06.2025,MKA,14.06.2025,,,,,,
