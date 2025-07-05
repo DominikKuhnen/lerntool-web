@@ -10,9 +10,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $header = fgetcsv($handle, 1000, ";"); // Header überspringen
 
         while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
-            $csvKuerzel    = strtoupper(trim($data[2])); // Spalte 3: Kürzel
-            $abteilung     = trim($data[6]);             // Spalte 7: Abteilung
-            $rolle         = strtoupper(trim($data[8])); // Spalte 9: OP/Relief/TL
+            $csvKuerzel = strtoupper(trim($data[2])); // Spalte 3: Kürzel
+            $abteilung  = trim($data[6]);             // Spalte 7: Abteilung
+            $rolle      = strtoupper(trim($data[8])); // Spalte 9: Rolle
 
             if ($kuerzel == $csvKuerzel) {
                 $_SESSION["kuerzel"]   = $kuerzel;
@@ -31,10 +31,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     }
 }
 ?>
-
 <!DOCTYPE html>
 <html>
 <head>
+    <meta charset="UTF-8">
     <title>Login</title>
     <style>
         body { font-family: sans-serif; margin: 50px; }
