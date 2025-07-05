@@ -1,58 +1,61 @@
 <?php
 session_start();
 
-if (!isset($_SESSION["kuerzel"])) {
-    header("Location: login.php");
-    exit();
-}
+$loginError = "";
 
-$kuerzel   = $_SESSION["kuerzel"];
-$abteilung = $_SESSION["abteilung"];
-$rolle     = $_SESSION["rolle"];
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $kuerzel = strtoupper(trim($_POST["kuerzel"]));
+
+    if (($handle = fopen("mitarbeiter2.csv", "r")) !== FALSE) {
+        $header = fgetcsv($handle, 1000, ";"); // Header überspringen
+
+        while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
+            $csvKuerzel    = strtoupper(trim($data[2])); // Spalte 3: Kürzel
+            $abteilung     = trim($data[6]);             // Spalte 7: Abteilung
+            $rolle         = strtoupper(trim($data[8])); // Spalte 9: OP/Relief/TL
+
+            if ($kuerzel == $csvKuerzel) {
+                $_SESSION["kuerzel"]   = $kuerzel;
+                $_SESSION["abteilung"] = $abteilung;
+                $_SESSION["rolle"]     = $rolle;
+                fclose($handle);
+                header("Location: start.php");
+                exit();
+            }
+        }
+
+        fclose($handle);
+        $loginError = "Ungültiges Kürzel!";
+    } else {
+        $loginError = "Fehler beim Öffnen der Mitarbeiterdatei.";
+    }
+}
 ?>
 
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="UTF-8">
-    <title>Startseite</title>
+    <title>Login</title>
     <style>
         body { font-family: sans-serif; margin: 50px; }
-        .container { max-width: 600px; margin: auto; }
-        h1 { font-size: 24px; }
-        .info { margin: 20px 0; }
-        a.button {
-            display: inline-block;
-            padding: 10px 20px;
-            margin: 10px 0;
-            background-color: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 4px;
+        .container { max-width: 400px; margin: auto; }
+        input[type="text"], input[type="submit"] {
+            width: 100%; padding: 10px; margin: 5px 0;
         }
-        a.button:hover {
-            background-color: #0056b3;
-        }
-        .logout {
-            margin-top: 30px;
-            display: block;
-            color: red;
-        }
+        .error { color: red; }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Willkommen im Lerntool</h1>
-        <div class="info">
-            <strong>Kürzel:</strong> <?= htmlspecialchars($kuerzel) ?><br>
-            <strong>Abteilung:</strong> <?= htmlspecialchars($abteilung) ?><br>
-            <strong>Rolle:</strong> <?= htmlspecialchars($rolle) ?>
-        </div>
-
-        <a href="bearbeiten.php" class="button">Wissen bearbeiten</a>
-        <!-- Weitere Module können hier folgen -->
-
-        <a href="logout.php" class="logout">Logout</a>
+        <h2>Login</h2>
+        <form method="post">
+            <label for="kuerzel">Kürzel:</label>
+            <input type="text" name="kuerzel" required>
+            <input type="submit" value="Login">
+            <?php if ($loginError): ?>
+                <p class="error"><?= htmlspecialchars($loginError) ?></p>
+            <?php endif; ?>
+        </form>
     </div>
 </body>
 </html>
