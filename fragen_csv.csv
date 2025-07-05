@@ -1,0 +1,21 @@
+ID,Frage,Antwort A,Antwort B,Antwort C,Richtige Antwort,Kategorie,Freigegeben,Eingereicht von,Abteilung,Kommentar,Datum,Bearbeitet von
+F001,Beispielfrage 1 zu Assembly,Antwort A,Antwort B,Antwort C,A,Kategorie 1,ja,DKU,Assembly,,2025-07-01,
+F002,Beispielfrage 2 zu Assembly,Antwort A,Antwort B,Antwort C,A,Kategorie 2,ja,PPE,Assembly,,2025-07-02,
+F003,Beispielfrage 3 zu Assembly,Antwort A,Antwort B,Antwort C,A,Kategorie 3,nein,SK,Assembly,,2025-07-03,
+F004,Beispielfrage 4 zu Assembly,Antwort A,Antwort B,Antwort C,A,Kategorie 1,nein,DKU,Assembly,,2025-07-04,
+F005,Beispielfrage 5 zu Assembly,Antwort A,Antwort B,Antwort C,A,Kategorie 2,nein,PPE,Assembly,abgelehnt,2025-07-05,
+F006,Beispielfrage 6 zu Assembly,Antwort A,Antwort B,Antwort C,A,Kategorie 3,nein,SK,Assembly,abgelehnt,2025-07-06,
+F007,Beispielfrage 7 zu Assembly,Antwort A,Antwort B,Antwort C,A,Kategorie 1,nein,DKU,Assembly,,2025-07-07,DKU
+F008,Beispielfrage 8 zu Assembly,Antwort A,Antwort B,Antwort C,A,Kategorie 2,nein,PPE,Assembly,,2025-07-08,PPE
+F009,Beispielfrage 9 zu Assembly,Antwort A,Antwort B,Antwort C,A,Kategorie 3,nein,SK,Assembly,,2025-07-09,
+F010,Beispielfrage 10 zu Assembly,Antwort A,Antwort B,Antwort C,A,Kategorie 1,nein,DKU,Assembly,,2025-07-10,
+F011,Beispielfrage 11 zu Machining,Antwort A,Antwort B,Antwort C,A,Kategorie 1,ja,MKA,Machining,,2025-07-01,
+F012,Beispielfrage 12 zu Machining,Antwort A,Antwort B,Antwort C,A,Kategorie 2,ja,PGI,Machining,,2025-07-02,
+F013,Beispielfrage 13 zu Machining,Antwort A,Antwort B,Antwort C,A,Kategorie 3,nein,MSL,Machining,,2025-07-03,
+F014,Beispielfrage 14 zu Machining,Antwort A,Antwort B,Antwort C,A,Kategorie 1,nein,MKA,Machining,,2025-07-04,
+F015,Beispielfrage 15 zu Machining,Antwort A,Antwort B,Antwort C,A,Kategorie 2,nein,PGI,Machining,abgelehnt,2025-07-05,
+F016,Beispielfrage 16 zu Machining,Antwort A,Antwort B,Antwort C,A,Kategorie 3,nein,MSL,Machining,abgelehnt,2025-07-06,
+F017,Beispielfrage 17 zu Machining,Antwort A,Antwort B,Antwort C,A,Kategorie 1,nein,MKA,Machining,,2025-07-07,DKU
+F018,Beispielfrage 18 zu Machining,Antwort A,Antwort B,Antwort C,A,Kategorie 2,nein,PGI,Machining,,2025-07-08,PPE
+F019,Beispielfrage 19 zu Machining,Antwort A,Antwort B,Antwort C,A,Kategorie 3,nein,MSL,Machining,,2025-07-09,
+F020,Beispielfrage 20 zu Machining,Antwort A,Antwort B,Antwort C,A,Kategorie 1,nein,MKA,Machining,,2025-07-10,
