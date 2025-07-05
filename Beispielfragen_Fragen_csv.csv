@@ -1,0 +1,41 @@
+ID,Frage,Antwort A,Antwort B,Antwort C,Richtige Antwort,Status,Abteilung Eingereicht von,Eingereicht von,Eingereicht am,Freigegeben von,Freigegeben am,Abgelehnt von,Abgelehnt am,Abgelehnt Kommentar,Bearbeitet von,Bearbeitet am,Bearbeitet Kommentar
+ASS-001,Was ist Schritt 1 im Prozess von Assembly?,Option A für Schritt 1,Option B für Schritt 1,Option C für Schritt 1,B,Bearbeitet,Assembly,SK,2025-05-22,,,,,,SK,2025-04-01,Antwort C wurde aktualisiert.
+ASS-002,Was ist Schritt 2 im Prozess von Assembly?,Option A für Schritt 2,Option B für Schritt 2,Option C für Schritt 2,B,Bearbeitet,Assembly,SK,2025-04-03,,,,,,SK,2025-04-16,Antwort C wurde aktualisiert.
+ASS-003,Was ist Schritt 3 im Prozess von Assembly?,Option A für Schritt 3,Option B für Schritt 3,Option C für Schritt 3,A,Freigegeben,Assembly,SK,2025-05-01,SK,2025-06-22,,,,,,
+ASS-004,Was ist Schritt 4 im Prozess von Assembly?,Option A für Schritt 4,Option B für Schritt 4,Option C für Schritt 4,B,Abgelehnt,Assembly,SK,2025-04-05,,,PPE,2025-04-08,Nicht spezifisch genug.,,,
+ASS-005,Was ist Schritt 5 im Prozess von Assembly?,Option A für Schritt 5,Option B für Schritt 5,Option C für Schritt 5,C,Bearbeitet,Assembly,SK,2025-04-10,,,,,,PPE,2025-05-24,Antwort C wurde aktualisiert.
+ASS-006,Was ist Schritt 6 im Prozess von Assembly?,Option A für Schritt 6,Option B für Schritt 6,Option C für Schritt 6,C,Bearbeitet,Assembly,DKU,2025-04-29,,,,,,SK,2025-06-15,Antwort C wurde aktualisiert.
+ASS-007,Was ist Schritt 7 im Prozess von Assembly?,Option A für Schritt 7,Option B für Schritt 7,Option C für Schritt 7,B,Freigegeben,Assembly,PPE,2025-05-08,SK,2025-06-28,,,,,,
+ASS-008,Was ist Schritt 8 im Prozess von Assembly?,Option A für Schritt 8,Option B für Schritt 8,Option C für Schritt 8,B,Bearbeitet,Assembly,SK,2025-06-19,,,,,,SK,2025-04-15,Antwort C wurde aktualisiert.
+ASS-009,Was ist Schritt 9 im Prozess von Assembly?,Option A für Schritt 9,Option B für Schritt 9,Option C für Schritt 9,A,Freigegeben,Assembly,SK,2025-06-26,SK,2025-06-11,,,,,,
+ASS-010,Was ist Schritt 10 im Prozess von Assembly?,Option A für Schritt 10,Option B für Schritt 10,Option C für Schritt 10,A,Offen,Assembly,SK,2025-06-07,,,,,,,,
+ASS-011,Was ist Schritt 11 im Prozess von Assembly?,Option A für Schritt 11,Option B für Schritt 11,Option C für Schritt 11,C,Freigegeben,Assembly,PPE,2025-04-20,SK,2025-06-12,,,,,,
+ASS-012,Was ist Schritt 12 im Prozess von Assembly?,Option A für Schritt 12,Option B für Schritt 12,Option C für Schritt 12,C,Freigegeben,Assembly,SK,2025-05-07,SK,2025-06-17,,,,,,
+ASS-013,Was ist Schritt 13 im Prozess von Assembly?,Option A für Schritt 13,Option B für Schritt 13,Option C für Schritt 13,C,Abgelehnt,Assembly,DKU,2025-06-11,,,DKU,2025-06-19,Nicht spezifisch genug.,,,
+ASS-014,Was ist Schritt 14 im Prozess von Assembly?,Option A für Schritt 14,Option B für Schritt 14,Option C für Schritt 14,A,Abgelehnt,Assembly,DKU,2025-05-29,,,DKU,2025-06-24,Nicht spezifisch genug.,,,
+ASS-015,Was ist Schritt 15 im Prozess von Assembly?,Option A für Schritt 15,Option B für Schritt 15,Option C für Schritt 15,A,Freigegeben,Assembly,PPE,2025-04-14,DKU,2025-05-23,,,,,,
+ASS-016,Was ist Schritt 16 im Prozess von Assembly?,Option A für Schritt 16,Option B für Schritt 16,Option C für Schritt 16,B,Freigegeben,Assembly,SK,2025-06-26,DKU,2025-06-08,,,,,,
+ASS-017,Was ist Schritt 17 im Prozess von Assembly?,Option A für Schritt 17,Option B für Schritt 17,Option C für Schritt 17,A,Bearbeitet,Assembly,DKU,2025-06-10,,,,,,DKU,2025-05-18,Antwort C wurde aktualisiert.
+ASS-018,Was ist Schritt 18 im Prozess von Assembly?,Option A für Schritt 18,Option B für Schritt 18,Option C für Schritt 18,C,Bearbeitet,Assembly,PPE,2025-07-01,,,,,,DKU,2025-05-11,Antwort C wurde aktualisiert.
+ASS-019,Was ist Schritt 19 im Prozess von Assembly?,Option A für Schritt 19,Option B für Schritt 19,Option C für Schritt 19,A,Bearbeitet,Assembly,PPE,2025-05-19,,,,,,SK,2025-05-23,Antwort C wurde aktualisiert.
+ASS-020,Was ist Schritt 20 im Prozess von Assembly?,Option A für Schritt 20,Option B für Schritt 20,Option C für Schritt 20,C,Abgelehnt,Assembly,DKU,2025-06-19,,,SK,2025-06-02,Nicht spezifisch genug.,,,
+MAC-001,Was ist Schritt 1 im Prozess von Machining?,Option A für Schritt 1,Option B für Schritt 1,Option C für Schritt 1,C,Bearbeitet,Machining,MSL,2025-07-03,,,,,,MSL,2025-06-19,Antwort C wurde aktualisiert.
+MAC-002,Was ist Schritt 2 im Prozess von Machining?,Option A für Schritt 2,Option B für Schritt 2,Option C für Schritt 2,B,Offen,Machining,MSL,2025-05-23,,,,,,,,
+MAC-003,Was ist Schritt 3 im Prozess von Machining?,Option A für Schritt 3,Option B für Schritt 3,Option C für Schritt 3,A,Offen,Machining,MSL,2025-04-27,,,,,,,,
+MAC-004,Was ist Schritt 4 im Prozess von Machining?,Option A für Schritt 4,Option B für Schritt 4,Option C für Schritt 4,A,Freigegeben,Machining,MSL,2025-05-05,MSL,2025-05-16,,,,,,
+MAC-005,Was ist Schritt 5 im Prozess von Machining?,Option A für Schritt 5,Option B für Schritt 5,Option C für Schritt 5,B,Abgelehnt,Machining,MSL,2025-06-20,,,MKA,2025-06-23,Nicht spezifisch genug.,,,
+MAC-006,Was ist Schritt 6 im Prozess von Machining?,Option A für Schritt 6,Option B für Schritt 6,Option C für Schritt 6,B,Abgelehnt,Machining,MSL,2025-07-04,,,PGI,2025-04-08,Nicht spezifisch genug.,,,
+MAC-007,Was ist Schritt 7 im Prozess von Machining?,Option A für Schritt 7,Option B für Schritt 7,Option C für Schritt 7,C,Bearbeitet,Machining,MSL,2025-05-22,,,,,,PGI,2025-07-01,Antwort C wurde aktualisiert.
+MAC-008,Was ist Schritt 8 im Prozess von Machining?,Option A für Schritt 8,Option B für Schritt 8,Option C für Schritt 8,A,Abgelehnt,Machining,MSL,2025-06-27,,,MKA,2025-07-03,Nicht spezifisch genug.,,,
+MAC-009,Was ist Schritt 9 im Prozess von Machining?,Option A für Schritt 9,Option B für Schritt 9,Option C für Schritt 9,B,Abgelehnt,Machining,MKA,2025-06-02,,,MKA,2025-06-14,Nicht spezifisch genug.,,,
+MAC-010,Was ist Schritt 10 im Prozess von Machining?,Option A für Schritt 10,Option B für Schritt 10,Option C für Schritt 10,C,Offen,Machining,PGI,2025-06-23,,,,,,,,
+MAC-011,Was ist Schritt 11 im Prozess von Machining?,Option A für Schritt 11,Option B für Schritt 11,Option C für Schritt 11,A,Offen,Machining,MSL,2025-05-08,,,,,,,,
+MAC-012,Was ist Schritt 12 im Prozess von Machining?,Option A für Schritt 12,Option B für Schritt 12,Option C für Schritt 12,C,Freigegeben,Machining,PGI,2025-06-03,MSL,2025-05-24,,,,,,
+MAC-013,Was ist Schritt 13 im Prozess von Machining?,Option A für Schritt 13,Option B für Schritt 13,Option C für Schritt 13,C,Bearbeitet,Machining,MKA,2025-06-01,,,,,,MKA,2025-06-01,Antwort C wurde aktualisiert.
+MAC-014,Was ist Schritt 14 im Prozess von Machining?,Option A für Schritt 14,Option B für Schritt 14,Option C für Schritt 14,C,Abgelehnt,Machining,MKA,2025-04-08,,,MSL,2025-05-20,Nicht spezifisch genug.,,,
+MAC-015,Was ist Schritt 15 im Prozess von Machining?,Option A für Schritt 15,Option B für Schritt 15,Option C für Schritt 15,A,Bearbeitet,Machining,PGI,2025-07-04,,,,,,PGI,2025-06-15,Antwort C wurde aktualisiert.
+MAC-016,Was ist Schritt 16 im Prozess von Machining?,Option A für Schritt 16,Option B für Schritt 16,Option C für Schritt 16,C,Abgelehnt,Machining,PGI,2025-07-02,,,MSL,2025-06-25,Nicht spezifisch genug.,,,
+MAC-017,Was ist Schritt 17 im Prozess von Machining?,Option A für Schritt 17,Option B für Schritt 17,Option C für Schritt 17,B,Abgelehnt,Machining,MSL,2025-06-04,,,MKA,2025-04-16,Nicht spezifisch genug.,,,
+MAC-018,Was ist Schritt 18 im Prozess von Machining?,Option A für Schritt 18,Option B für Schritt 18,Option C für Schritt 18,A,Offen,Machining,MSL,2025-05-21,,,,,,,,
+MAC-019,Was ist Schritt 19 im Prozess von Machining?,Option A für Schritt 19,Option B für Schritt 19,Option C für Schritt 19,B,Bearbeitet,Machining,MSL,2025-05-17,,,,,,PGI,2025-06-22,Antwort C wurde aktualisiert.
+MAC-020,Was ist Schritt 20 im Prozess von Machining?,Option A für Schritt 20,Option B für Schritt 20,Option C für Schritt 20,A,Freigegeben,Machining,PGI,2025-05-09,PGI,2025-04-24,,,,,,
