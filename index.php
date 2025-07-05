@@ -1,4 +1,10 @@
 <?php
-// Weiterleitung zur eigentlichen Startseite
-header("Location: start.php");
-exit();
+session_start();
+
+if (!isset($_SESSION["kuerzel"])) {
+    header("Location: login.php");
+    exit();
+} else {
+    header("Location: start.php");
+    exit();
+}
