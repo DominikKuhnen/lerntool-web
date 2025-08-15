@@ -14,6 +14,10 @@ button {
     border: none;
     cursor: pointer;
 }
+codex/replace-div-containers-with-html5-tags
+
+=======
+main
 a.button:hover,
 button:hover {
     background-color: #0056b3;
@@ -28,16 +32,31 @@ body.start {
     background-color: #f7f7f7;
     text-align: center;
 }
+codex/replace-div-containers-with-html5-tags
+
+body.start main {
+=======
 body.start .container {
+main
     max-width: 600px;
     background: #fff;
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0,0,0,0.1);
+codex/replace-div-containers-with-html5-tags
+    margin: auto;
+}
+
+body.start h1 {
+    margin-bottom: 20px;
+}
+
+=======
 }
 body.start h1 {
     margin-bottom: 20px;
 }
+main
 body.start .button {
     display: block;
     width: 100%;
@@ -46,15 +65,26 @@ body.start .button {
 }
 
 /* Login page */
+codex/replace-div-containers-with-html5-tags
+body.login main {
+    max-width: 400px;
+    margin: auto;
+}
+
+
 body.login .container {
     max-width: 400px;
 }
+main
 body.login input[type="text"],
 body.login input[type="submit"] {
     width: 100%;
     margin: 5px 0;
     padding: 10px;
 }
+codex/replace-div-containers-with-html5-tags
+
+main
 body.login .error {
     color: red;
 }
@@ -64,12 +94,23 @@ body.hinzufuegen {
     background: #f0f0f0;
     padding: 50px;
 }
+codex/replace-div-containers-with-html5-tags
+
+body.hinzufuegen main {
+=======
 body.hinzufuegen .container {
+main
     max-width: 700px;
     background: #fff;
     padding: 20px;
     border-radius: 10px;
+codex/replace-div-containers-with-html5-tags
+    margin: auto;
 }
+
+
+}
+main
 body.hinzufuegen input,
 body.hinzufuegen textarea,
 body.hinzufuegen select {
@@ -78,6 +119,10 @@ body.hinzufuegen select {
     padding: 10px;
     font-size: 16px;
 }
+codex/replace-div-containers-with-html5-tags
+
+=======
+main
 body.hinzufuegen label {
     font-weight: bold;
     display: block;
@@ -88,18 +133,33 @@ body.hinzufuegen label {
 body.lernen .container {
     max-width: 700px;
 }
+codex/replace-div-containers-with-html5-tags
+
 body.lernen h2 {
     font-size: 22px;
 }
+
+
+body.lernen h2 {
+    font-size: 22px;
+}
+main
 body.lernen .box {
     background: #f0f0f0;
     padding: 20px;
     margin-top: 20px;
     border-radius: 5px;
 }
+codex/replace-div-containers-with-html5-tags
+
 body.lernen .navigation {
     margin-top: 20px;
 }
+
+body.lernen .navigation {
+    margin-top: 20px;
+}
+ main
 body.lernen .navigation a {
     margin-right: 10px;
 }
@@ -110,21 +170,38 @@ body.suchen table {
     width: 100%;
     margin-top: 20px;
 }
+codex/replace-div-containers-with-html5-tags
+
+main
 body.suchen th,
 body.suchen td {
     border: 1px solid #ccc;
     padding: 8px;
 }
+codex/replace-div-containers-with-html5-tags
+
 body.suchen th {
     background-color: #eee;
 }
+
+body.suchen th {
+    background-color: #eee;
+}
+main
 body.suchen input,
 body.suchen select {
     padding: 5px;
 }
+codex/replace-div-containers-with-html5-tags
+
 body.suchen .form {
     margin-bottom: 20px;
 }
+
+body.suchen .form {
+    margin-bottom: 20px;
+}
+main
 body.suchen a.button {
     color: #007BFF;
 }
@@ -135,10 +212,16 @@ body.bearbeiten {
     background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
     color: #333;
 }
+codex/replace-div-containers-with-html5-tags
+
+main
 body.bearbeiten h1 {
     margin-bottom: 20px;
     color: #004085;
 }
+codex/replace-div-containers-with-html5-tags
+
+main
 body.bearbeiten .formular {
     background: #fff;
     padding: 25px;
@@ -147,6 +230,9 @@ body.bearbeiten .formular {
     max-width: 600px;
     margin-bottom: 30px;
 }
+codex/replace-div-containers-with-html5-tags
+
+main
 body.bearbeiten textarea {
     width: 100%;
     height: 100px;
@@ -157,6 +243,9 @@ body.bearbeiten textarea {
     border-radius: 6px;
     border: 1px solid #ccc;
 }
+codex/replace-div-containers-with-html5-tags
+
+main
 body.bearbeiten select,
 body.bearbeiten input[type="text"] {
     padding: 10px;
@@ -166,14 +255,25 @@ body.bearbeiten input[type="text"] {
     border: 1px solid #ccc;
     font-size: 1rem;
 }
+codex/replace-div-containers-with-html5-tags
+
+main
 body.bearbeiten button {
     border-radius: 6px;
     font-size: 1rem;
     transition: background-color 0.2s ease;
 }
+codex/replace-div-containers-with-html5-tags
+
 body.bearbeiten button:hover {
     background-color: #0056b3;
 }
+
+
+body.bearbeiten button:hover {
+    background-color: #0056b3;
+}
+main
 body.bearbeiten .success {
     color: green;
     margin-bottom: 20px;

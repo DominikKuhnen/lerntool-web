@@ -39,16 +39,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="login">
+codex/replace-div-containers-with-html5-tags
+    <main>
     <div class="container">
+main
         <h2>Login</h2>
         <form method="post">
             <label for="kuerzel">Kürzel:</label>
-            <input type="text" name="kuerzel" required>
+            <input type="text" name="kuerzel" id="kuerzel" required>
             <input type="submit" value="Login">
             <?php if ($loginError): ?>
                 <p class="error"><?= htmlspecialchars($loginError) ?></p>
             <?php endif; ?>
         </form>
-    </div>
+    </main>
 </body>
 </html>
