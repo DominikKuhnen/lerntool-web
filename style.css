@@ -1,0 +1,87 @@
+body {
+    font-family: sans-serif;
+    margin: 50px;
+}
+
+body.start {
+    background-color: #f7f7f7;
+    text-align: center;
+}
+
+body.hinzufuegen {
+    background: #f0f0f0;
+    padding: 50px;
+}
+
+main.start {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+main.login {
+    max-width: 400px;
+    margin: auto;
+}
+
+main.hinzufuegen {
+    max-width: 700px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+h1 {
+    margin-bottom: 20px;
+}
+
+.button {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    margin: 10px 0;
+    background-color: #007BFF;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.button:hover {
+    background-color: #0056b3;
+}
+
+input[type="text"],
+input[type="submit"],
+textarea,
+select {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    font-size: 16px;
+}
+
+textarea,
+select {
+    margin-bottom: 15px;
+}
+
+label {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+}
+
+.error {
+    color: red;
+}
