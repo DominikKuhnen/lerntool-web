@@ -36,26 +36,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <style>
-        body { font-family: sans-serif; margin: 50px; }
-        .container { max-width: 400px; margin: auto; }
-        input[type="text"], input[type="submit"] {
-            width: 100%; padding: 10px; margin: 5px 0;
-        }
-        .error { color: red; }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    <div class="container">
+<body class="login">
+    <main>
         <h2>Login</h2>
         <form method="post">
             <label for="kuerzel">Kürzel:</label>
-            <input type="text" name="kuerzel" required>
-            <input type="submit" value="Login">
+            <input type="text" name="kuerzel" id="kuerzel" required>
+            <button type="submit">Login</button>
             <?php if ($loginError): ?>
                 <p class="error"><?= htmlspecialchars($loginError) ?></p>
             <?php endif; ?>
         </form>
-    </div>
+    </main>
 </body>
 </html>
