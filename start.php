@@ -15,7 +15,7 @@ $rolle     = $_SESSION["rolle"];
 <head>
     <meta charset="UTF-8">
     <title>Startmenü</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="start">
 <main class="start">
