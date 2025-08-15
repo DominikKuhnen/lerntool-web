@@ -44,29 +44,28 @@ $daten = filterCsv($datei, $typ, $suchbegriff, $kategorie, $status);
 <head>
     <meta charset="UTF-8">
     <title>Suche</title>
+    <link rel="stylesheet" href="style.css">
     <style>
         body { font-family: sans-serif; margin: 50px; }
         table { border-collapse: collapse; width: 100%; margin-top: 20px; }
         th, td { border: 1px solid #ccc; padding: 8px; }
         th { background-color: #eee; }
-        input, select { padding: 5px; }
         .form { margin-bottom: 20px; }
-        a.button { text-decoration: none; color: #007BFF; }
     </style>
 </head>
 <body>
     <h1>Suche im Lerntool</h1>
     <form class="form" method="get">
         <label>Typ:
-            <select name="typ">
+            <select class="form-control" name="typ">
                 <option value="frage" <?= $typ === 'frage' ? 'selected' : '' ?>>Fragen</option>
                 <option value="tipp" <?= $typ === 'tipp' ? 'selected' : '' ?>>Tipps</option>
             </select>
         </label>
-        <label>Stichwort: <input type="text" name="q" value="<?= htmlspecialchars($suchbegriff) ?>"></label>
-        <label>Kategorie: <input type="text" name="kat" value="<?= htmlspecialchars($kategorie) ?>"></label>
-        <label>Status: <input type="text" name="status" value="<?= htmlspecialchars($status) ?>"></label>
-        <button type="submit">Suchen</button>
+        <label>Stichwort: <input class="form-control" type="text" name="q" value="<?= htmlspecialchars($suchbegriff) ?>"></label>
+        <label>Kategorie: <input class="form-control" type="text" name="kat" value="<?= htmlspecialchars($kategorie) ?>"></label>
+        <label>Status: <input class="form-control" type="text" name="status" value="<?= htmlspecialchars($status) ?>"></label>
+        <button class="btn btn-primary" type="submit">Suchen</button>
     </form>
 
     <?php if (count($daten) > 0): ?>
@@ -84,7 +83,7 @@ $daten = filterCsv($datei, $typ, $suchbegriff, $kategorie, $status);
                 <td><?= htmlspecialchars($eintrag[1]) ?></td>
                 <td><?= $typ === 'frage' ? htmlspecialchars($eintrag[7]) : htmlspecialchars($eintrag[2]) ?></td>
                 <td><?= $typ === 'frage' ? htmlspecialchars($eintrag[6]) : htmlspecialchars($eintrag[3]) ?></td>
-                <td><a class="button" href="bearbeiten.php?typ=<?= $typ ?>&id=<?= urlencode($eintrag[0]) ?>">Bearbeiten</a></td>
+                <td><a class="btn btn-primary" href="bearbeiten.php?typ=<?= $typ ?>&id=<?= urlencode($eintrag[0]) ?>">Bearbeiten</a></td>
             </tr>
         <?php endforeach; ?>
     </table>

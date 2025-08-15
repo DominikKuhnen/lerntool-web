@@ -106,6 +106,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 <head>
   <meta charset="UTF-8">
   <title>✏️ Bearbeiten</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
@@ -125,37 +126,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       max-width: 600px;
       margin-bottom: 30px;
     }
-    textarea {
-      width: 100%;
-      height: 100px;
-      margin-bottom: 15px;
-      font-family: inherit;
-      font-size: 1rem;
-      padding: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-    select, input[type="text"] {
-      padding: 10px;
-      width: 100%;
-      margin-bottom: 15px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #007bff;
-      border: none;
-      color: white;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
     .success {
       color: green;
       margin-bottom: 20px;
@@ -167,7 +137,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <?php if (isset($_GET['saved'])) echo "<p class='success'>✅ Änderung gespeichert</p>"; ?>
   <form class="formular" method="get">
     <label>Typ wählen:</label>
-    <select name="typ" onchange="this.form.submit()">
+    <select class="form-control" name="typ" onchange="this.form.submit()">
       <option value="frage" <?= $typ==='frage'?'selected':'' ?>>Fragen</option>
       <option value="tipp" <?= $typ==='tipp'?'selected':'' ?>>Tipps</option>
     </select>
@@ -176,7 +146,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   <form class="formular" method="post">
     <input type="hidden" name="typ" value="<?= htmlspecialchars($typ) ?>">
     <label>Eintrag auswählen:</label>
-    <select name="id" onchange="zeigeDetails(this.value)">
+    <select class="form-control" name="id" onchange="zeigeDetails(this.value)">
       <option value="">-- bitte wählen --</option>
       <?php foreach ($eintraege as $e): ?>
         <option value="<?= $e['id'] ?>"><?= $e['id'] ?> – <?= htmlspecialchars(mb_strimwidth($e['text'], 0, 60, '...')) ?></option>
@@ -184,12 +154,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </select>
 
     <label>Text:</label>
-    <textarea name="text" id="textfeld" required></textarea>
+    <textarea class="form-control" name="text" id="textfeld" required></textarea>
 
     <label>Kategorie:</label>
-    <input type="text" name="kategorie" id="katfeld" required>
+    <input class="form-control" type="text" name="kategorie" id="katfeld" required>
 
-    <button type="submit">📂 Speichern</button>
+    <button class="btn btn-primary" type="submit">📂 Speichern</button>
   </form>
 
   <script>
