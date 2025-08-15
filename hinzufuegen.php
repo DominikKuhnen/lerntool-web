@@ -10,15 +10,9 @@ if (!isset($_SESSION["kuerzel"])) {
 <head>
     <meta charset="UTF-8">
     <title>Wissen hinzufügen</title>
-    <style>
-        body { font-family: sans-serif; background: #f0f0f0; padding: 50px; }
-        .container { max-width: 700px; margin: auto; background: white; padding: 20px; border-radius: 10px; }
-        input, textarea, select { width: 100%; margin-bottom: 15px; padding: 10px; font-size: 16px; }
-        label { font-weight: bold; display: block; margin-bottom: 5px; }
-        button { padding: 10px 20px; font-size: 16px; }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="hinzufuegen">
 <div class="container">
     <h2>➕ Wissen hinzufügen</h2>
     <form method="post" action="speichere_wissen.php">

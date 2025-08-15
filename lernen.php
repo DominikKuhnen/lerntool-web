@@ -56,24 +56,9 @@ $eintrag = $fragen[$index] ?? null;
 <head>
     <meta charset="UTF-8">
     <title>Lernen</title>
-    <style>
-        body { font-family: sans-serif; margin: 50px; }
-        .container { max-width: 700px; margin: auto; }
-        h2 { font-size: 22px; }
-        .box { background: #f0f0f0; padding: 20px; margin-top: 20px; border-radius: 5px; }
-        .navigation { margin-top: 20px; }
-        .navigation a {
-            padding: 10px 20px;
-            background: #007BFF;
-            color: white;
-            text-decoration: none;
-            border-radius: 5px;
-            margin-right: 10px;
-        }
-        .navigation a:hover { background: #0056b3; }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="lernen">
 <div class="container">
     <h1>Lernen – <?= $tippModus ? 'Tipps' : 'Fragen' ?></h1>
     <p><strong><?= $index+1 ?>/<?= $gesamt ?></strong></p>
