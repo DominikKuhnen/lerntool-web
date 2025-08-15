@@ -13,12 +13,19 @@ if (!isset($_SESSION["kuerzel"])) {
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="hinzufuegen">
+codex/replace-div-containers-with-html5-tags
     <main>
         <section>
             <h2>➕ Wissen hinzufügen</h2>
             <form method="post" action="speichere_wissen.php">
                 <label>Kategorie:</label>
                 <input type="text" name="kategorie" required>
+<div class="container">
+    <h2>➕ Wissen hinzufügen</h2>
+    <form method="post" action="speichere_wissen.php">
+        <label>Kategorie:</label>
+        <input type="text" name="kategorie" required>
+main
 
                 <label>Frage:</label>
                 <textarea name="frage" required></textarea>

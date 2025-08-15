@@ -39,7 +39,10 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <link rel="stylesheet" href="assets/style.css">
 </head>
 <body class="login">
+codex/replace-div-containers-with-html5-tags
     <main>
+    <div class="container">
+main
         <h2>Login</h2>
         <form method="post">
             <label for="kuerzel">Kürzel:</label>
