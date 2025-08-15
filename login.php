@@ -38,8 +38,8 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Login</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
-    <main class="login">
+<body class="login">
+    <main>
         <h2>Login</h2>
         <form method="post">
             <label for="kuerzel">Kürzel:</label>

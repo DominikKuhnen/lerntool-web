@@ -1,87 +1,208 @@
+/* Global basic styles */
 body {
-    font-family: sans-serif;
+    font-family: 'Segoe UI', sans-serif;
     margin: 50px;
 }
 
+a.button,
+button {
+    padding: 10px 20px;
+    background-color: #007BFF;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    border: none;
+    cursor: pointer;
+}
+
+a.button:hover,
+button:hover {
+    background-color: #0056b3;
+}
+
+.container {
+    margin: auto;
+}
+
+/* Start page */
 body.start {
     background-color: #f7f7f7;
     text-align: center;
 }
 
+body.start main {
+    max-width: 600px;
+    background: #fff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    margin: auto;
+}
+
+body.start h1 {
+    margin-bottom: 20px;
+}
+
+body.start .button {
+    display: block;
+    width: 100%;
+    margin: 10px 0;
+    font-size: 18px;
+}
+
+/* Login page */
+body.login main {
+    max-width: 400px;
+    margin: auto;
+}
+
+body.login input[type="text"],
+body.login input[type="submit"] {
+    width: 100%;
+    margin: 5px 0;
+    padding: 10px;
+}
+
+body.login .error {
+    color: red;
+}
+
+/* Hinzufügen page */
 body.hinzufuegen {
     background: #f0f0f0;
     padding: 50px;
 }
 
-main.start {
-    max-width: 600px;
-    margin: auto;
-    background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-main.login {
-    max-width: 400px;
-    margin: auto;
-}
-
-main.hinzufuegen {
+body.hinzufuegen main {
     max-width: 700px;
-    margin: auto;
-    background: white;
+    background: #fff;
     padding: 20px;
     border-radius: 10px;
+    margin: auto;
 }
 
-h1 {
-    margin-bottom: 20px;
-}
-
-.button {
-    display: block;
+body.hinzufuegen input,
+body.hinzufuegen textarea,
+body.hinzufuegen select {
     width: 100%;
-    padding: 15px;
-    margin: 10px 0;
-    background-color: #007BFF;
-    color: white;
-    text-decoration: none;
-    border-radius: 5px;
-    font-size: 18px;
-    text-align: center;
-}
-
-.button:hover {
-    background-color: #0056b3;
-}
-
-input[type="text"],
-input[type="submit"],
-textarea,
-select {
-    width: 100%;
+    margin-bottom: 15px;
     padding: 10px;
-    margin: 5px 0;
     font-size: 16px;
 }
 
-textarea,
-select {
-    margin-bottom: 15px;
-}
-
-label {
+body.hinzufuegen label {
     font-weight: bold;
     display: block;
     margin-bottom: 5px;
 }
 
-button {
-    padding: 10px 20px;
-    font-size: 16px;
+/* Lernen page */
+body.lernen .container {
+    max-width: 700px;
 }
 
-.error {
-    color: red;
+body.lernen h2 {
+    font-size: 22px;
+}
+
+body.lernen .box {
+    background: #f0f0f0;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+body.lernen .navigation {
+    margin-top: 20px;
+}
+
+body.lernen .navigation a {
+    margin-right: 10px;
+}
+
+/* Suchen page */
+body.suchen table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-top: 20px;
+}
+
+body.suchen th,
+body.suchen td {
+    border: 1px solid #ccc;
+    padding: 8px;
+}
+
+body.suchen th {
+    background-color: #eee;
+}
+
+body.suchen input,
+body.suchen select {
+    padding: 5px;
+}
+
+body.suchen .form {
+    margin-bottom: 20px;
+}
+
+body.suchen a.button {
+    color: #007BFF;
+}
+
+/* Bearbeiten page */
+body.bearbeiten {
+    padding: 40px;
+    background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+    color: #333;
+}
+
+body.bearbeiten h1 {
+    margin-bottom: 20px;
+    color: #004085;
+}
+
+body.bearbeiten .formular {
+    background: #fff;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    max-width: 600px;
+    margin-bottom: 30px;
+}
+
+body.bearbeiten textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 15px;
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 10px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+}
+
+body.bearbeiten select,
+body.bearbeiten input[type="text"] {
+    padding: 10px;
+    width: 100%;
+    margin-bottom: 15px;
+    border-radius: 6px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+}
+
+body.bearbeiten button {
+    border-radius: 6px;
+    font-size: 1rem;
+    transition: background-color 0.2s ease;
+}
+
+body.bearbeiten button:hover {
+    background-color: #0056b3;
+}
+
+body.bearbeiten .success {
+    color: green;
+    margin-bottom: 20px;
 }

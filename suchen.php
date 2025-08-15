@@ -44,17 +44,9 @@ $daten = filterCsv($datei, $typ, $suchbegriff, $kategorie, $status);
 <head>
     <meta charset="UTF-8">
     <title>Suche</title>
-    <style>
-        body { font-family: sans-serif; margin: 50px; }
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-        th, td { border: 1px solid #ccc; padding: 8px; }
-        th { background-color: #eee; }
-        input, select { padding: 5px; }
-        .form { margin-bottom: 20px; }
-        a.button { text-decoration: none; color: #007BFF; }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="suchen">
     <h1>Suche im Lerntool</h1>
     <form class="form" method="get">
         <label>Typ:
