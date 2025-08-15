@@ -36,16 +36,9 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <style>
-        body { font-family: sans-serif; margin: 50px; }
-        .container { max-width: 400px; margin: auto; }
-        input[type="text"], input[type="submit"] {
-            width: 100%; padding: 10px; margin: 5px 0;
-        }
-        .error { color: red; }
-    </style>
+    <link rel="stylesheet" href="assets/style.css">
 </head>
-<body>
+<body class="login">
     <div class="container">
         <h2>Login</h2>
         <form method="post">
