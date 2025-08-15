@@ -1,34 +1,31 @@
 <?php
 session_start();
 
-$loginError = "";
+// E-Mail des angemeldeten Nutzers ermitteln
+$email = '';
+if (!empty($_SERVER['AUTH_USER'])) {
+    $email = $_SERVER['AUTH_USER'];
+} elseif (!empty($_SERVER['REMOTE_USER'])) {
+    $email = $_SERVER['REMOTE_USER'];
+} elseif (!empty($_SERVER['LOGON_USER'])) {
+    $email = $_SERVER['LOGON_USER'];
+}
 
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    $kuerzel = strtoupper(trim($_POST["kuerzel"]));
+// Vorname aus der E-Mail extrahieren (Format: Vorname.Nachname@...)
+$firstName = '';
+if (!empty($email)) {
+    $localPart = explode('@', $email)[0];
+    $nameParts = explode('.', $localPart);
+    $firstName = ucfirst(strtolower($nameParts[0] ?? ''));
 
-    if (($handle = fopen("mitarbeiter2.csv", "r")) !== FALSE) {
-        $header = fgetcsv($handle, 1000, ";"); // Header überspringen
+    // Speichere den Vornamen als Kürzel in der Session
+    $_SESSION['kuerzel'] = $firstName;
+}
 
-        while (($data = fgetcsv($handle, 1000, ";")) !== FALSE) {
-            $csvKuerzel = strtoupper(trim($data[2])); // Spalte 3: Kürzel
-            $abteilung  = trim($data[6]);             // Spalte 7: Abteilung
-            $rolle      = strtoupper(trim($data[8])); // Spalte 9: Rolle
-
-            if ($kuerzel == $csvKuerzel) {
-                $_SESSION["kuerzel"]   = $kuerzel;
-                $_SESSION["abteilung"] = $abteilung;
-                $_SESSION["rolle"]     = $rolle;
-                fclose($handle);
-                header("Location: start.php");
-                exit();
-            }
-        }
-
-        fclose($handle);
-        $loginError = "Ungültiges Kürzel!";
-    } else {
-        $loginError = "Fehler beim Öffnen der Mitarbeiterdatei.";
-    }
+// Weiterleitung nach Klick auf den Login-Button
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    header('Location: start.php');
+    exit();
 }
 ?>
 <!DOCTYPE html>
@@ -38,19 +35,17 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Login</title>
     <link rel="stylesheet" href="assets/style.css">
 </head>
-<body class="login">
-codex/replace-div-containers-with-html5-tags
-    <main>
-    <div class="container">
-main
-        <h2>Login</h2>
+  <body class="login">
+      <main>
+        <?php if ($firstName): ?>
+            <p>Hallo <?= htmlspecialchars($firstName) ?>!</p>
+            <p><?= htmlspecialchars($email) ?></p>
+        <?php else: ?>
+            <p>Keine E-Mail gefunden.</p>
+        <?php endif; ?>
+
         <form method="post">
-            <label for="kuerzel">Kürzel:</label>
-            <input type="text" name="kuerzel" id="kuerzel" required>
-            <input type="submit" value="Login">
-            <?php if ($loginError): ?>
-                <p class="error"><?= htmlspecialchars($loginError) ?></p>
-            <?php endif; ?>
+            <button type="submit">Login</button>
         </form>
     </main>
 </body>
