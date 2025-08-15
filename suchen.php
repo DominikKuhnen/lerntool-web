@@ -37,24 +37,20 @@ $kategorie = $_GET['kat'] ?? '';
 $status = $_GET['status'] ?? '';
 $datei = $typ === 'frage' ? 'daten/fragen.csv' : 'daten/tipps.csv';
 $daten = filterCsv($datei, $typ, $suchbegriff, $kategorie, $status);
-?>
 
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Suche</title>
-    <style>
-        body { font-family: sans-serif; margin: 50px; }
-        table { border-collapse: collapse; width: 100%; margin-top: 20px; }
-        th, td { border: 1px solid #ccc; padding: 8px; }
-        th { background-color: #eee; }
-        input, select { padding: 5px; }
-        .form { margin-bottom: 20px; }
-        a.button { text-decoration: none; color: #007BFF; }
-    </style>
-</head>
-<body>
+$title = "Suche";
+$styles = <<<CSS
+body { font-family: sans-serif; margin: 50px; }
+table { border-collapse: collapse; width: 100%; margin-top: 20px; }
+th, td { border: 1px solid #ccc; padding: 8px; }
+th { background-color: #eee; }
+input, select { padding: 5px; }
+.form { margin-bottom: 20px; }
+a.button { text-decoration: none; color: #007BFF; }
+CSS;
+
+include 'header.php';
+?>
     <h1>Suche im Lerntool</h1>
     <form class="form" method="get">
         <label>Typ:
@@ -93,5 +89,4 @@ $daten = filterCsv($datei, $typ, $suchbegriff, $kategorie, $status);
     <?php endif; ?>
 
     <p><a href="start.php">Zurück zur Startseite</a></p>
-</body>
-</html>
+<?php include 'footer.php'; ?>

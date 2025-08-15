@@ -100,69 +100,66 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
   header("Location: bearbeiten.php?typ=$typ&saved=1");
   exit();
 }
+
+$title = "✏️ Bearbeiten";
+$styles = <<<CSS
+body {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 40px;
+  background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
+  color: #333;
+}
+h1 {
+  margin-bottom: 20px;
+  color: #004085;
+}
+.formular {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+  max-width: 600px;
+  margin-bottom: 30px;
+}
+textarea {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 15px;
+  font-family: inherit;
+  font-size: 1rem;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+select, input[type="text"] {
+  padding: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 1rem;
+}
+button {
+  padding: 10px 20px;
+  background-color: #007bff;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+button:hover {
+  background-color: #0056b3;
+}
+.success {
+  color: green;
+  margin-bottom: 20px;
+}
+CSS;
+
+include 'header.php';
 ?>
-<!DOCTYPE html>
-<html lang="de">
-<head>
-  <meta charset="UTF-8">
-  <title>✏️ Bearbeiten</title>
-  <style>
-    body {
-      font-family: 'Segoe UI', sans-serif;
-      padding: 40px;
-      background: linear-gradient(to bottom right, #f8f9fa, #e9ecef);
-      color: #333;
-    }
-    h1 {
-      margin-bottom: 20px;
-      color: #004085;
-    }
-    .formular {
-      background: white;
-      padding: 25px;
-      border-radius: 12px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-      max-width: 600px;
-      margin-bottom: 30px;
-    }
-    textarea {
-      width: 100%;
-      height: 100px;
-      margin-bottom: 15px;
-      font-family: inherit;
-      font-size: 1rem;
-      padding: 10px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-    }
-    select, input[type="text"] {
-      padding: 10px;
-      width: 100%;
-      margin-bottom: 15px;
-      border-radius: 6px;
-      border: 1px solid #ccc;
-      font-size: 1rem;
-    }
-    button {
-      padding: 10px 20px;
-      background-color: #007bff;
-      border: none;
-      color: white;
-      font-size: 1rem;
-      border-radius: 6px;
-      cursor: pointer;
-      transition: background-color 0.2s ease;
-    }
-    button:hover {
-      background-color: #0056b3;
-    }
-    .success {
-      color: green;
-      margin-bottom: 20px;
-    }
-  </style>
-</head>
-<body>
   <h1>✏️ Bearbeiten von Fragen und Tipps</h1>
   <?php if (isset($_GET['saved'])) echo "<p class='success'>✅ Änderung gespeichert</p>"; ?>
   <form class="formular" method="get">
@@ -205,5 +202,4 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
       }
     }
   </script>
-</body>
-</html>
+<?php include 'footer.php'; ?>

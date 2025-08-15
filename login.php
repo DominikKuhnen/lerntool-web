@@ -30,22 +30,19 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $loginError = "Fehler beim Öffnen der Mitarbeiterdatei.";
     }
 }
+
+$title = "Login";
+$styles = <<<CSS
+body { font-family: sans-serif; margin: 50px; }
+.container { max-width: 400px; margin: auto; }
+input[type="text"], input[type="submit"] {
+    width: 100%; padding: 10px; margin: 5px 0;
+}
+.error { color: red; }
+CSS;
+
+include 'header.php';
 ?>
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="UTF-8">
-    <title>Login</title>
-    <style>
-        body { font-family: sans-serif; margin: 50px; }
-        .container { max-width: 400px; margin: auto; }
-        input[type="text"], input[type="submit"] {
-            width: 100%; padding: 10px; margin: 5px 0;
-        }
-        .error { color: red; }
-    </style>
-</head>
-<body>
     <div class="container">
         <h2>Login</h2>
         <form method="post">
@@ -57,5 +54,4 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php endif; ?>
         </form>
     </div>
-</body>
-</html>
+<?php include 'footer.php'; ?>
